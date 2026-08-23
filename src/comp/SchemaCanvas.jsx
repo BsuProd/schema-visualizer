@@ -371,7 +371,7 @@ function createAutomaticLayout(tables, relationships) {
 // Schema Canvas
 
 
-function SchemaCanvas({ schema }) {
+function SchemaCanvas({ schema, onTryExample }) {
 
   const [selectedRelationship, setSelectedRelationship] =
     useState(null);
@@ -698,11 +698,17 @@ function SchemaCanvas({ schema }) {
 
         <div className="empty-schema-text">
           Paste a SQL schema statment into the box above
-          and click Visualize to start.
+          and click Visualize to start or try the example Schema below.
+        </div> <br/>
+
+        <div>
+          <button className="try-example" onClick={onTryExample}>
+              CS50 Pset 7 : (Fiftyville) Schema
+          </button>           
         </div>
-
-      </div>
-
+          
+        </div>
+    
         ) : (
 
       <ReactFlow

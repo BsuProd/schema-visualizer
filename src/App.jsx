@@ -5,11 +5,20 @@ import SqlInput from "./comp/SqlInput";
 
 import { schema as defaultSchema } from "./data/schema";
 import SchemaInfo from "./comp/SchemaInfo";
+import { parseSQL } from "./data/sqlParser";
 
 function App() {
 
-  const [schema, setSchema] =
-    useState(defaultSchema);
+  const [schema, setSchema] = useState({
+  tables: [],
+  relationships: [],
+});
+
+  function handleTryExample() {
+
+    setSchema(defaultSchema);
+
+}
 
 
   return (
@@ -44,7 +53,8 @@ function App() {
 
           <SchemaInfo schema={schema} />
 
-          <SchemaCanvas schema={schema} />
+          <SchemaCanvas schema={schema}
+          onTryExample={handleTryExample} />
 
         </div>
 

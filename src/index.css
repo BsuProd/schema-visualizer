@@ -129,9 +129,9 @@ body {
 }
 
 
- 
+
 /* Main */
- 
+
 
 .app-main {
   flex: 1;
@@ -140,9 +140,9 @@ body {
 }
 
 
- 
+
 /* Schema Canvas */
- 
+
 
 .schema-canvas {
   width: 100%;
@@ -151,9 +151,8 @@ body {
 }
 
 
- 
+
 /* Table Node  */
- 
 
 .table-node {
   min-width: 230px;
@@ -443,3 +442,27 @@ body {
 
   text-align: center;
 }
+
+.try-example {
+
+  flex-shrink: 0;
+
+  border: 1px solid #333;
+
+  background: #333;
+
+  color: white;
+
+  cursor: pointer;
+
+  padding: 5px 12px;
+
+  border-radius: 5px;
+
+}
+
+.try-example button:hover {
+  background: #555;
+}
+
+
