@@ -10,8 +10,6 @@ So I built one.
 
 Hosted :`https://github.com/BsuProd/schema-visualizer`
 
-Video URL:`https://www.youtube.com/watch?v=h8s9FbNDSRA`
-
 Kat's Schema Visualizer takes simple SQL schema definitions, parses them in the browser, and turns them into a visual representation where tables, columns, keys, and relationships can be explored interactively.
 
 This is my first published web project, and it has also been a practical way to learn React, JavaScript, state management, parsing, graph visualization, responsive design, and deployment.
